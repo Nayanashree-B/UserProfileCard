@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive user profile card built with HTML, CSS, JavaScript, and the DummyJSON API.">
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page-container">
+        <header class="page-header">
+            <p class="eyebrow">API MINI PROJECT</p>
+            <h1>User Profile Card</h1>
+            <p class="subtitle">Explore user information fetched from an API.</p>
+        </header>
+
+        <section class="card-container" id="card-container"
+                 aria-label="User profile">
+            <p class="loading-message" role="status">Loading user profile...</p>
+        </section>
+    </main>
+
+    <dialog id="profile-dialog" class="profile-dialog"
+            aria-labelledby="dialog-name">
+        <button type="button" id="close-dialog" class="close-button"
+                aria-label="Close profile details">&times;</button>
+        <img id="dialog-image" class="dialog-image" src="" alt="">
+        <h2 id="dialog-name"></h2>
+        <p id="dialog-email" class="dialog-email"></p>
+        <div class="profile-details">
+            <p><strong>Age:</strong> <span id="dialog-age"></span></p>
+            <p><strong>Gender:</strong> <span id="dialog-gender"></span></p>
+            <p><strong>Phone:</strong> <span id="dialog-phone"></span></p>
+            <p><strong>Address:</strong> <span id="dialog-address"></span></p>
+        </div>
+    </dialog>
+</body>
+</html>
